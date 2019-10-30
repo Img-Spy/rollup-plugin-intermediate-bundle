@@ -1,0 +1,30 @@
+{
+  "name": "rollup-plugin-intermediate-bundle",
+  "description": "Create a intermediate bundle using other",
+  "version": "0.1.0",
+  "author": "Fernando Roman <fer.roman92@gmail.com>",
+  "repository": "Img-Spy/rollup-plugin-intermediate-bundle",
+  "license": "MIT",
+  "main": "dist/rollup-plugin-intermediate-bundle.cjs.js",
+  "module": "dist/rollup-plugin-intermediate-bundle.es.js",
+  "scripts": {
+    "build": "npx rollup -c",
+    "test": "mocha test/test.js",
+    "pretest": "npm run build",
+    "prepublishOnly": "npm run lint && rm -rf dist && npm test",
+    "prepare": "npm run build",
+    "lint": "eslint src"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "mocha": "^5.2.0",
+    "rollup": "^1.10.1"
+  },
+  "dependencies": {
+    "rollup-pluginutils": "^2.3.3"
+  }
+}
