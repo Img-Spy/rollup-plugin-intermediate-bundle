@@ -1,7 +1,7 @@
 {
   "name": "rollup-plugin-intermediate-bundle",
   "description": "Create a intermediate bundle using other",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "Fernando Roman <fer.roman92@gmail.com>",
   "repository": "Img-Spy/rollup-plugin-intermediate-bundle",
   "license": "MIT",
@@ -20,7 +20,7 @@
     "README.md"
   ],
   "devDependencies": {
-    "eslint": "^5.10.0",
+    "eslint": "^6.6.0",
     "mocha": "^5.2.0",
     "rollup": "^1.10.1"
   },

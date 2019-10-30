@@ -6,10 +6,10 @@ Create an intermediate bundle to be used by other rollup bundles.
 
 ```bash
 # yarn
-yarn add rollup-plugin-electron -D
+yarn add rollup-plugin-intermediate-bundle -D
 
 # npm
-npm install rollup-plugin-electron -D
+npm install rollup-plugin-intermediate-bundle -D
 ```
 
 ## Usage

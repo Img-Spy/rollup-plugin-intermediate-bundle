@@ -1,6 +1,3 @@
-import { createFilter } from 'rollup-pluginutils';
-
-
 const INTERMEDIATE_BUNDLE = "bundle-"
 
 function intermediateBundleCreate(options) {
@@ -62,7 +59,7 @@ function intermediateBundleUse(options) {
 	return {
         name: 'intermediate-bundle-create',
 
-        resolveId(importee, importer) {
+        resolveId(importee) {
             if(importee === bundlePath) {
                 return false; // External
             }
